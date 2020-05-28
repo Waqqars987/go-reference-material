@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Go REST API",
+		"_postman_id": "3627ea4b-ea70-fb9d-0eb4-7f9a07ae3781",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/books",
+			"request": {
+				"url": "http://localhost:8000/api/books",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/books/1",
+			"request": {
+				"url": "http://localhost:8000/api/books/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/books",
+			"request": {
+				"url": "http://localhost:8000/api/books",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isbn\":\"324345\",\n\t\"title\":\"Book Three\",\n\t\"author\":{\"firstname\":\"Carol\",\"lastname\":\"Williams\"}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/books/1",
+			"request": {
+				"url": "http://localhost:8000/api/books/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/books/2",
+			"request": {
+				"url": "http://localhost:8000/api/books/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isbn\":\"324345\",\n\t\"title\":\"Updated Book Two\",\n\t\"author\":{\"firstname\":\"Carol\",\"lastname\":\"Williams\"}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
